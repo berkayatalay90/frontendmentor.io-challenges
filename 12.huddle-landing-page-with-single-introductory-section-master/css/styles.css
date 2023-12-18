@@ -1,0 +1,259 @@
+* {
+    font-family: 'Open Sans', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    --white: #fff;
+    --soft-magenta: hsl(300, 69%, 71%);
+    --violet: hsl(257, 40%, 49%);
+    font-size: 1rem;
+    list-style: none;
+}
+
+body {
+    background-color: var(--violet)
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: 'Poppins', sans-serif;
+    color: var(--white);
+}
+
+.background-picture {
+    position: absolute;
+    z-index: -5;
+    top: 0;
+}
+
+/* Header Section */
+
+header {
+    margin: 10% auto;
+    padding: 0 10%;
+}
+
+header img {
+    width: 60%;
+}
+
+/* Main Section */
+
+main {
+    padding: 0 10%;
+}
+
+.mock-up {
+    width: 100%;
+    margin-bottom: 20%;
+}
+
+
+/* Headings */
+
+.headings {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+}
+
+h1 {
+    font-size: 1.5rem;
+    margin-bottom: 5%;
+}
+
+.headings p {
+    color: var(--white);
+    line-height: 1.5;
+}
+
+.register-btn {
+    margin: 8% auto 5%;
+    padding: 4%;
+    border-radius: 25px;
+    width: 70%;
+    color: var(--violet);
+    font-size: .85rem;
+    font-weight: 700;
+    box-shadow: 5px 5px 25px hsl(257, 57%, 60%);
+}
+
+.register-btn:focus, .register-btn:hover {
+    background-color: var(--soft-magenta);
+    color: var(--white);
+    box-shadow: 5px 5px 15px hsl(257, 94%, 27%);
+    cursor: pointer;
+}
+
+/* Footer Section */
+
+footer ul {
+    margin-top: 12%;
+    display: flex;
+    gap: 1.25rem;
+    justify-content: center;
+    align-items: center;
+}
+
+footer li {
+    border: 1px white solid;
+    background-color: var(--violet);
+    width: 10%;
+    border-radius: 50%;
+    aspect-ratio: 1/1;
+    padding: 2%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+footer li:hover {
+    border: 1px solid var(--soft-magenta);
+    cursor: pointer;
+}
+
+
+/* Tablet Design */
+
+@media (min-width: 376px) and (max-width: 850px) {
+
+    .mock-up {
+        margin-bottom: 10%;
+    }
+
+    /* Headings */
+
+    .register-btn {
+        margin: 5% auto;
+        padding: 3%;
+        border-radius: 35px;
+        width: 50%;
+        font-size: 1rem;
+    }
+
+    /* Footer Section */
+
+    footer {
+        margin: 4% auto;
+    }
+
+    footer button {
+        width: 2%;
+        border-radius: 50%;
+        aspect-ratio: 1/1;
+        padding: 3%;
+    }
+
+    /* Footer Section */
+
+    footer ul {
+        margin-top: 8%;
+    }
+
+    footer li {
+        width: 6%;
+    }
+
+}
+
+/* Desktop Design */
+
+@media (min-width: 851px) {
+
+    .background-picture {
+        position: absolute;
+        z-index: -5;
+        top: -15px;
+        left: -45px;
+    }
+
+    /* Header Section */
+
+    header {
+        margin: 3% auto 5%;
+        padding: 0 5%;
+    }
+
+    header img {
+        width: 15%;
+    }
+
+    /* Main Section */
+
+    main {
+        padding: 0 5%;
+        display: flex;
+    }
+
+    article {
+        width: 50%;
+    }
+
+    .mock-up {
+        width: 100%;
+        margin-bottom: 0;
+    }
+
+    /* Headings */
+
+    .headings {
+        width: 50%;
+        margin: 3% 0 0 3%;
+        justify-content: flex-start;
+        text-align: unset;
+    }
+
+    h1 {
+        font-size: 2rem;
+        padding-right: 35%;
+        margin-bottom: 2%;
+    }
+
+    .headings p {
+        padding-right: 30%;
+    }
+
+    .register-btn {
+        width: 30%;
+        padding: 2.5%;
+        border-radius: 30px;
+        margin: 3% 0;
+    }
+
+    /* Footer Section */
+
+    footer ul {
+        margin: unset;
+        padding-right: 5%;
+        justify-content: flex-end;
+        align-items: flex-start
+    }
+
+    footer li {
+        width: 3%;
+        padding: 5px;
+    }
+}
+
+/* 
+*** Style *** 
+
+*** Font Weights*** 
+Headings: Poppins
+400, 700
+
+Body: Open Sans
+400
+
+*** Colors ***
+
+### Primary
+
+- Violet: hsl(257, 40%, 49%)
+- Soft Magenta: hsl(300, 69%, 71%)
+
+ */

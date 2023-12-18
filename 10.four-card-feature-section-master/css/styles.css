@@ -1,0 +1,293 @@
+* {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    --dark-gray: hsl(234, 12%, 34%);
+    --light-gray: hsl(229, 6%, 66%);
+    --very-light-gray: hsl(0, 0%, 98%);
+}
+
+body {
+    font-size: 0.9375rem;
+}
+
+main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+/* Titles Section */
+
+.titles {
+    margin: 3% auto;
+    text-align: center;
+}
+
+h1 {
+    color: var(--dark-gray);
+    font-weight: 200;
+    font-size: 2rem;
+}
+
+.titles span {
+    display: block;
+    color: var(--dark-gray);
+    font-weight: 600;
+}
+
+.titles p {
+    color: var(--dark-gray);
+    margin-top: 2%;
+    padding: 0 20%;
+    line-height: 2;
+    font-size: .85rem;
+}
+
+/* Cards Section  */
+
+.card {
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    padding: 2%;
+    width: min(19%, 300px);
+    height: 200px;
+    box-shadow: 0 0 10px #9b9b9b;
+    position: relative;
+}
+
+.card-text-container {
+    margin-bottom: 3%;
+}
+
+.card p {
+    font-size: .75rem;
+    color: var(--light-gray);
+    margin-top: 2%;
+}
+
+.card img {
+    width: 18%;
+    position: absolute;
+    bottom: 20px;
+    right: 20px;
+}
+
+.supervisor-card {
+    position: absolute;
+    top: 350px;
+    left: 320px;
+    border-top: 4px solid hsl(180, 62%, 55%);
+}
+
+.team-builder-card {
+    position: absolute;
+    top: 250px;
+    right: 600px;
+    border-top: 4px solid hsl(0, 78%, 62%);
+}
+
+.karma-card {
+    position: absolute;
+    top: 475px;
+    right: 600px;
+    border-top: 4px solid hsl(34, 97%, 64%);
+}
+
+.calculator-card {
+    position: absolute;
+    top: 350px;
+    right: 275px;
+    border-top: 4px solid hsl(212, 86%, 64%);
+}
+
+/* X-Large Screen Design */
+
+@media (min-width: 1700px) {
+
+    .supervisor-card {
+        left: 375px;
+    }
+
+    .team-builder-card {
+        right: 720px;
+    }
+
+    .karma-card {
+        right: 720px;
+    }
+
+    .calculator-card {
+        right: 390px;
+    }
+}
+
+/* Large Screen Design */
+
+@media (min-width: 1600px) and (max-width: 1699px) {
+
+    .team-builder-card {
+        right: 650px;
+    }
+
+    .karma-card {
+        right: 650px;
+    }
+
+    .calculator-card {
+        right: 315px;
+    }
+}
+
+@media (min-width: 1200px) and (max-width: 1500px) {
+
+    .supervisor-card {
+        left: 250px;
+    }
+
+    .team-builder-card {
+        right: 590px;
+    }
+
+    .karma-card {
+        right: 590px;
+    }
+
+    .calculator-card {
+        right: 300px;
+    }
+}
+
+
+/* Tablet Design */
+
+@media (max-width: 850px) {
+
+    .card {
+        width: 30%;
+    }
+
+    .supervisor-card {
+        left: 20px;
+        top: 315px;
+    }
+
+    .team-builder-card {
+        right: 300px;
+        top: 225px;
+    }
+
+    .karma-card {
+        right: 300px;
+        top: 450px;
+    }
+
+    .calculator-card {
+        right: 25px;
+        top: 315px;
+    }
+}
+
+/* Mobile Design */
+
+@media (max-width: 500px) {
+
+    main {
+        margin: 20% 8%;
+    }
+
+    /* Titles Section */
+
+    .titles {
+        margin-bottom: 20%;
+
+    }
+
+    h1 {
+        font-size: 1.5rem;
+    }
+
+    .titles p {
+        margin-top: 3%;
+        padding: 0 5%;
+        font-size: .90rem;
+    }
+
+    /* Cards Section  */
+
+    .card {
+        width: 90%;
+        margin: 0 auto 10%;
+        padding: 8%;
+    }
+
+    .card-text-container {
+        margin-bottom: 0;
+    }
+
+    .supervisor-card,
+    .team-builder-card,
+    .karma-card,
+    .calculator-card {
+        position: static;
+    }
+
+    .card img {
+        width: 15%;
+    }
+
+    img.supervisor {
+        right: 70px;
+    }
+
+    img.team-builder {
+        right: 70px;
+        bottom: -210px;
+    }
+
+    img.karma {
+        right: 70px;
+        bottom: -440px;
+    }
+
+    img.calculator {
+        right: 70px;
+        bottom: -670px;
+    }
+
+    /* Attribution Section */
+
+    footer {
+        position: static;
+    }
+
+}
+
+
+/* 
+*** Style *** 
+
+*** Font Weights*** 
+
+200, 400, 600
+
+*** Colors ***
+
+### Primary
+
+V### Primary
+
+- Red: hsl(0, 78%, 62%)
+- Cyan: hsl(180, 62%, 55%)
+- Orange: hsl(34, 97%, 64%)
+- Blue: hsl(212, 86%, 64%)
+
+### Neutral
+
+- Very Dark Blue: hsl(234, 12%, 34%)
+- Grayish Blue: hsl(229, 6%, 66%)
+- Very Light Gray: hsl(0, 0%, 98%)
+ */

@@ -1,0 +1,177 @@
+* {
+    font-family: 'Barlow Semi Condensed', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-size: 0.8125rem;
+    --white: #fff;
+    --light-gray: hsl(0, 0%, 81%);
+}
+
+body {
+    background-color: aliceblue;
+}
+
+main {
+    height: 500px;
+    display: grid;
+    width: min(60%, 1000px);
+    grid-template-columns: repeat(4, 25%);
+    grid-template-rows: repeat(2, 50%);
+    margin: 6% auto;
+    gap: 4%;
+}
+
+.box {
+    border-radius: 5px;
+    padding: 25px;
+    box-shadow: 0 0 10px 5px rgb(211, 211, 211);
+}
+
+/* Profile Section */
+
+.profile {
+    display: flex;
+    gap: 1rem
+}
+
+.profile img {
+    border-radius: 50%;
+    border: 1px solid var(--white);
+    width: 30px;
+}
+
+.profile p {
+    font-size: .85rem;
+    font-weight: 600;
+}
+
+span {
+    display: block;
+    font-weight: 500;
+    opacity: .5;
+}
+
+h4 {
+    margin: 15px 0;
+    font-size: 1.35rem;
+}
+
+.comments {
+    font-size: .90rem;
+    line-height: 1.35;
+    opacity: .7;
+}
+
+/* Containers */
+
+.container1 {
+    grid-column-end: 3;
+    grid-column-start: 1;
+    background-color: hsl(263, 55%, 52%);
+    padding-right: 8%;
+    color: var(--light-gray);
+    background-image: url(../images/bg-pattern-quotation.svg);
+    background-repeat: no-repeat;
+    background-position: 325px top;
+}
+
+.container2 {
+    background-color: hsl(217, 19%, 35%);
+    color: var(--light-gray);
+}
+
+.container3 {
+    grid-column-start: 4;
+    grid-column-end: 5;
+    grid-row-start: 1;
+    grid-row-end: 3;
+    background-color: var(--white);
+}
+
+.container4 {
+    background-color: var(--white);
+}
+
+.container5 {
+    grid-column-end: 4;
+    grid-column-start: 2;
+    background-color: hsl(219, 29%, 14%);
+    color: var(--light-gray);
+}
+
+
+/* Mobile Design */
+
+@media (max-width: 376px) {
+
+    main {
+        height: auto;
+        display: flex;
+        flex-direction: column;
+        width: 90%;
+        margin: 15% auto;
+        gap: 2rem;
+    }
+
+    .box {
+        height: auto;
+    }
+
+    /* Profile Section */
+
+    .profile img {
+        border-radius: 50%;
+        border: 1px solid var(--white);
+        width: 15%;
+    }
+
+    .profile p {
+        font-size: 1.2rem;
+        margin-top: 1%;
+    }
+
+    h4 {
+        font-size: 1.6rem;
+    }
+
+    .comments {
+        font-size: 1rem;
+    }
+
+    /* Containers */
+
+    .container1 {
+        background-position: 210px top;
+    }
+
+    .container3 {
+        order: 3;
+    }
+
+}
+
+
+/* *** Style *** 
+
+*** Font Weights*** 
+500, 600
+
+*** Colors ***
+
+### Primary
+
+Moderate violet: hsl(263, 55%, 52%);
+Very dark grayish blue: hsl(217, 19%, 35%)
+Very dark blackish blue: hsl(219, 29%, 14%)
+White: hsl(0, 0%, 100%)
+
+### Neutral
+
+Light gray: hsl(0, 0%, 81%)
+Light grayish blue: hsl(210, 46%, 95%)
+
+Note for text colors:
+
+1. "Verified Graduate" has the same color as the person's name with 50% opacity
+2. Review paragraphs inside the quotations have the same color as well, but are at 70% opacity */

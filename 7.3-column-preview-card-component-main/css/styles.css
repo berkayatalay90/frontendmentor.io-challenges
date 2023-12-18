@@ -1,0 +1,171 @@
+* {
+    font-family: 'Lexend Deca', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    --sedan-orange: hsl(31, 77%, 52%);
+    --suv-dark-cyan: hsl(184, 100%, 22%);
+    --luxury-very-dark-cyan: hsl(179, 100%, 13%);
+}
+
+body {
+    font-size: 0.9375rem;
+    background-color: hsl(0, 0%, 95%);
+}
+
+main {
+    width: min(800px, 75%);
+    display: flex;
+    text-align: left;
+    margin: 8% auto;
+}
+
+section {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    width: 33.3%;
+    padding: 5%;
+    gap: 1.5rem;
+}
+
+img {
+    width: 30%;
+}
+
+h2 {
+    font-family: 'Big Shoulders Display', cursive;
+    font-weight: 700;
+    color: hsl(0, 0%, 95%);
+    font-size: 2.25rem;
+    text-transform: uppercase;
+}
+
+p {
+    color: hsla(0, 0%, 100%, 0.75);
+    font-size: .85em;
+    line-height: 1.75;
+    margin-top: 1.5rem;
+}
+
+button {
+    border-radius: 25px;
+    background-color: hsl(0, 0%, 95%);
+    width: 70%;
+    padding: 6%;
+    cursor: pointer;
+    border: none;
+    margin-top: 45%;
+}
+
+section button:hover {
+    color: hsl(0, 0%, 95%);
+    background-color: transparent;
+    border: 2px #fff solid;
+}
+
+.sedan-section {
+    background-color: var(--sedan-orange);
+    border-radius: 8px 0 0 8px;
+}
+
+.sedan-section button {
+    color: var(--sedan-orange);
+}
+
+.suv-section {
+    background-color: var(--suv-dark-cyan);
+}
+
+.suv-section button {
+    color: var(--suv-dark-cyan);
+}
+
+.luxury-section {
+    background-color: var(--luxury-very-dark-cyan);
+    border-radius: 0 8px 8px 0;
+}
+
+.luxury-section button {
+    color: var(--luxury-very-dark-cyan);
+}
+
+/* Tablet Design */
+
+@media (max-width: 768px) {
+    main {
+        min-width: 85%;
+        margin: 5% auto;
+    }
+
+    section {
+        padding: 5% 3%;
+    }
+
+    button {
+        width: 90%;
+        padding: 6%;
+        margin-top: 25%;
+    }
+}
+
+/* Mobile Design */
+
+@media (max-width: 480px) {
+    main {
+        flex-direction: column;
+        width: 70%;
+        margin: 15% auto;
+    }
+
+    section {
+        width: 100%;
+        padding: 15%;
+    }
+
+    img {
+        width: 20%;
+    }
+
+    p {
+        padding-right: 10%;
+    }
+
+    button {
+        width: 70%;
+    }
+
+    .sedan-section {
+        border-radius: 8px 8px 0 0;
+    }
+
+    .luxury-section {
+        background-color: var(--luxury-very-dark-cyan);
+        border-radius: 0 0 8px 8px;
+    }
+}
+
+
+/* 
+*** Style *** 
+
+*** Font Weights*** 
+
+font-family: 'Big Shoulders Display', cursive; 700
+font-family: 'Lexend Deca', sans-serif; 400
+
+
+*** Colors ***
+
+### Primary
+
+Bright orange: hsl(31, 77%, 52%)
+Dark cyan: hsl(184, 100%, 22%)
+Very dark cyan: hsl(179, 100%, 13%)
+
+### Neutral
+
+Transparent white (paragraphs): hsla(0, 0%, 100%, 0.75)
+Very light gray (background, headings, buttons): hsl(0, 0%, 95%)
+
+*/

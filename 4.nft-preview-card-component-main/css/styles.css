@@ -1,0 +1,178 @@
+* {
+    font-family: 'Outfit', sans-serif;
+    text-decoration: none;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-size: 1.125rem;
+    --gray: hsl(215, 15%, 50%);
+    --small: 0.85rem;
+}
+
+body {
+    background-color: hsl(217, 54%, 11%);
+    text-align: left;
+}
+
+main {
+    width: min(320px, 35%);
+    height: auto;
+    margin: 7% auto;
+    display: flex;
+    flex-direction: column;
+    background-color: hsl(216, 50%, 16%);
+    border-radius: 12px;
+    padding: 1.5%;
+}
+
+
+.main-image {
+    border-radius: 12px;
+    width: 100%;
+    object-fit: cover;
+}
+
+section {
+    display: flex;
+    flex-direction: column;
+    margin-top: 6%;
+    justify-content: space-between;
+    gap: 1rem;
+}
+
+h1 {
+    font-weight: 600;
+    color: #fff;
+    font-size: 1.25rem;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.explanation-text {
+    font-weight: 300;
+    color: var(--gray);
+    font-size: var(--small);
+}
+
+.time-currency-section {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.time-currency-section div {
+    display: flex;
+    gap: .5rem;
+    align-items: center;
+}
+
+.currency {
+    font-weight: 600;
+    color: hsl(178, 100%, 50%);
+    font-size: var(--small);
+
+}
+
+.remaining-time {
+    color: var(--gray);
+    font-size: var(--small);
+}
+
+hr {
+    background-color: rgb(108, 113, 116);
+    border: none;
+    height: .5px;
+}
+
+.credits-section {
+    display: flex;
+    justify-content: flex-start;
+    gap: 1rem;
+}
+
+.credits-section img {
+    width: 12.5%;
+    aspect-ratio: 1/1;
+    border: 1px solid white;
+    border-radius: 50%;
+}
+
+.credits-text {
+    color: var(--gray);
+    font-size: var(--small);
+}
+
+.credits-section a {
+    color: white;
+    font-size: var(--small);
+    font-weight: 300;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+/* Active States */
+
+.credits-section a:hover,
+.credits-section a:focus {
+    color: hsl(178, 100%, 50%);
+}
+
+.title-link:hover {
+    color: hsl(178, 100%, 50%);
+}
+
+
+/* Tablet Design */
+
+@media (max-width: 768px) {
+
+    main {
+        width: 50%;
+        height: auto;
+        margin: 7% auto;
+        padding: 3% 3% 5%;
+    }
+}
+
+/* Mobile Design */
+
+@media (max-width: 480px) {
+
+    html {
+        font-size: 1.5rem;
+    }
+
+    main {
+        width: 90%;
+        height: auto;
+        margin: 12% auto;
+        flex-direction: column;
+        background-color: hsl(216, 50%, 16%);
+        border-radius: 12px;
+        padding: 6%;
+    }
+}
+
+
+/* 
+*** Style *** 
+
+*** Font Weights*** 
+
+300, 400, 600
+
+*** Colors ***
+
+### Primary
+
+- Soft blue: hsl(215, 51%, 70%)
+- Cyan: hsl(178, 100%, 50%)
+
+### Neutral
+
+- Very dark blue (main BG): hsl(217, 54%, 11%)
+- Very dark blue (card BG): hsl(216, 50%, 16%)
+- Very dark blue (line): hsl(215, 32%, 27%)
+- White: hsl(0, 0%, 100%)
+
+*/

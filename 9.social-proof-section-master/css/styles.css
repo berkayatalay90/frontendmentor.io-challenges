@@ -1,0 +1,290 @@
+* {
+    font-family: 'League Spartan', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    --purple: hsl(300, 43%, 22%);
+    --dark-grayish-magenta: hsl(303, 10%, 53%);
+    --light-grayish-magenta: hsl(300, 24%, 96%);
+    --soft-pink: hsl(333, 80%, 67%);
+}
+
+body {
+    font-size: 0.9375rem;
+    background: url(../images/bg-pattern-top-desktop.svg), url(../images/bg-pattern-bottom-desktop.svg);
+    background-repeat: no-repeat, no-repeat;
+    background-position: 0 0, 300px 100px;
+}
+
+main {
+    width: min(1350px, 90%);
+    margin: 5% auto;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 3.5rem;
+    padding-left: 5%;
+}
+
+.top-container {
+    display: flex;
+}
+
+/* Header Section & Titles */
+
+.header-section {
+    width: 50%;
+    padding-right: 12%;
+}
+
+h1 {
+    color: var(--purple);
+    font-size: 4rem;
+    line-height: 3rem;
+    margin-bottom: 5%;
+}
+
+h3 {
+    color: var(--dark-grayish-magenta);
+    font-weight: 400;
+    line-height: 1.5rem;
+    font-size: 1.25rem;
+}
+
+/* Rating Section */
+
+.rating-section {
+    width: 35%;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    justify-content: center;
+}
+
+.rating-container {
+    display: flex;
+    justify-content: space-between;
+    padding: 4% 2%;
+    align-items: center;
+    border-radius: 5px;
+    background-color: var(--light-grayish-magenta);
+}
+
+.rating-container:nth-child(2) {
+    position: relative;
+    left: 10%;
+}
+
+.rating-container:nth-child(3) {
+    position: relative;
+    left: 20%;
+}
+
+.star-container {
+    display: flex;
+    width: 40%;
+    justify-content: space-evenly;
+}
+
+.rating-container p {
+    color: var(--purple);
+    font-weight: 700;
+}
+
+/* Testimonials Section */
+
+.testimonials-section {
+    display: flex;
+    gap: 1.5rem;
+    height: 190px;
+}
+
+.testimonials-container {
+    background-color: var(--purple);
+    color: #fff;
+    padding: 3%;
+    border-radius: 5px;
+    width: 345px;
+}
+
+.testimonials-container:nth-child(2) {
+    position: relative;
+    top: 10%;
+}
+
+.testimonials-container:nth-child(3) {
+    position: relative;
+    top: 20%;
+}
+
+.testimonials-personal-info {
+    display: flex;
+    gap: 1rem;
+    margin-bottom: 8%;
+}
+
+.testimonials-section img {
+    aspect-ratio: 1/1;
+    width: 12%;
+    border-radius: 50%;
+}
+
+.name {
+    font-weight: 500;
+}
+
+span {
+    color: var(--soft-pink);
+    display: block;
+    font-weight: 400;
+    margin-top: 4%;
+}
+
+.comments {
+    font-weight: 400;
+    line-height: 1.2;
+}
+
+/* Tablet Design */
+
+@media (max-width: 850px) {
+
+    main {
+        width: 90vw;
+    }
+
+    /* Header Section & Titles */
+
+    h1 {
+        font-size: 2.5rem;
+        line-height: 2rem;
+    }
+
+    .header-section {
+        width: 50%;
+        padding-right: 5%;
+    }
+
+    /* Rating Section */
+
+    .rating-section {
+        width: 50%;
+        font-size: .85rem;
+    }
+
+    .rating-container:nth-child(2),
+    .rating-container:nth-child(3) {
+        position: unset;
+    }
+
+    /* Testimonials Section */
+
+    .testimonials-section {
+        width: 100%;
+        font-size: .75rem;
+    }
+
+    .testimonials-container:nth-child(2),
+    .testimonials-container:nth-child(3) {
+        position: unset;
+    }
+}
+
+/* Mobile Design */
+
+@media (max-width: 500px) {
+
+    body {
+        background: url(../images/bg-pattern-top-mobile.svg), url(../images/bg-pattern-bottom-mobile.svg);
+    }
+
+    main {
+        width: 90%;
+        margin: 15% auto;
+        display: flex;
+        flex-wrap: nowrap;
+        flex-direction: column;
+        padding: 0 6%;
+        text-align: center;
+    }
+
+    .top-container {
+        flex-direction: column;
+        width: 100%;
+    }
+
+    /* Header Section & Titles */
+
+    .header-section {
+        width: 100%;
+        padding-right: unset;
+    }
+
+    h3 {
+        font-size: 1rem;
+        line-height: 1.25rem;
+    }
+
+    /* Rating Section */
+
+    .rating-section {
+        width: 100%;
+        margin-top: 12%;
+    }
+
+    .rating-container {
+        display: flex;
+        flex-direction: column;
+        gap: 1rem
+    }
+
+    /* Testimonials Section */
+
+    .testimonials-section {
+        flex-direction: column;
+        width: 100%;
+        gap: 1rem;
+        height: auto;
+    }
+
+    .testimonials-container {
+        padding: 12%;
+        width: 100%;
+        height: 220px;
+        font-size: .85rem;
+    }
+
+    .testimonials-personal-info {
+        align-items: center;
+    }
+
+    .testimonials-section img {
+        width: 15%;
+    }
+
+    .comments {
+        line-height: 1.5;
+        text-align: left;
+        padding-right: 6%;
+    }
+}
+
+
+/* 
+*** Style *** 
+
+*** Font Weights*** 
+
+400, 500, 700
+
+*** Colors ***
+
+### Primary
+
+Very Dark Magenta: hsl(300, 43%, 22%)
+Soft Pink: hsl(333, 80%, 67%)
+
+### Neutral
+
+Dark Grayish Magenta: hsl(303, 10%, 53%)
+Light Grayish Magenta: hsl(300, 24%, 96%)
+White: hsl(0, 0%, 100%) */
