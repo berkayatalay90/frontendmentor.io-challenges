@@ -1,3 +1,3 @@
 
-Hi! This is the repo for my completed frontendmentor.io challenges. This repo is only for the challenges requires HTML & CSS except JS.
+Hi! This is the repo for the completed frontendmentor.io challenges. This repo is only for the challenges requires HTML & CSS except JS.
 
